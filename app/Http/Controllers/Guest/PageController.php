@@ -12,6 +12,16 @@ class PageController extends Controller
     {
         $movies = Movie::all();
         /* dd($movies); */
-        return view('welcome', compact('movies'));
+        return view('movies', compact('movies'));
+    }
+
+    public function about()
+    {
+        return view('about');
+    }
+
+    public function contacts()
+    {
+        return view('contacts');
     }
 }
